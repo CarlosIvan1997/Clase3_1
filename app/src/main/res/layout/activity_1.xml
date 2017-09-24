@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView android:id="@+id/tv_1"
+        android:text="INFORMACION"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+        <EditText android:id="@+id/et_nombres"
+            android:layout_marginTop="20dp"
+            android:padding="10dp"
+            android:layout_below="@id/tv_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Escriba sus nombres"
+            android:maxLines="1"/>
+
+        <EditText android:id="@+id/et_ap"
+            android:padding="10dp"
+            android:layout_below="@+id/et_nombres"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Escriba su apellido paterno"
+            android:maxLines="1"/>
+
+        <EditText android:id="@+id/et_am"
+            android:padding="10dp"
+            android:layout_below="@id/et_ap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Escriba su apellido materno"
+            android:maxLines="1"/>
+
+        <EditText android:id="@+id/et_correo"
+            android:padding="10dp"
+            android:layout_below="@+id/et_am"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:hint="Escriba su correo electrónico"
+            android:maxLines="1"/>
+
+        <EditText android:id="@+id/et_password"
+            android:layout_below="@id/et_correo"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:hint="Escriba su contraseña"
+            android:fontFamily="sans-serif"
+            android:maxLines="1"/>
+
+    <ImageView android:id="@+id/iv_1"
+        android:src="@drawable/img1"
+        android:layout_below="@+id/et_password"
+        android:layout_centerHorizontal="true"
+        android:layout_width="200dp"
+        android:layout_height="100dp" />
+
+    <Button android:text="GUARDAR"
+        android:id="@+id/btn_guardar"
+        android:layout_below="@+id/iv_1"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

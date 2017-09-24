@@ -33,9 +33,15 @@ public class Activity1 extends AppCompatActivity {
         //Paso 1
 
         ButterKnife.bind(this);
+
+        //Escribir codigo
+
+
     }
 
-    @OnClick(R.id.btn_guardar) public void onButtonClick (){
+    //Paso 3
+
+    @OnClick({R.id.btn_guardar, R.id.iv_1}) public void onButtonClick (){
         Toast.makeText(this, "Hola", Toast.LENGTH_SHORT).show();
     }
 }

@@ -5,6 +5,7 @@
 
     <TextView android:id="@+id/tv_1"
         android:text="INFORMACION"
+        android:textColor="#9C27B0"
         android:layout_marginTop="20dp"
         android:textSize="20sp"
         android:layout_alignParentTop="true"
@@ -13,12 +14,15 @@
         android:layout_height="wrap_content" />
 
         <EditText android:id="@+id/et_nombres"
+            android:textColor="#3F51B5"
             android:layout_marginTop="20dp"
             android:padding="10dp"
             android:layout_below="@id/tv_1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Escriba sus nombres"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center"
             android:maxLines="1"/>
 
         <EditText android:id="@+id/et_ap"
@@ -27,6 +31,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Escriba su apellido paterno"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center"
             android:maxLines="1"/>
 
         <EditText android:id="@+id/et_am"
@@ -35,6 +41,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Escriba su apellido materno"
+            android:gravity="center"
+            android:fontFamily="sans-serif-condensed"
             android:maxLines="1"/>
 
         <EditText android:id="@+id/et_correo"
@@ -43,17 +51,20 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textEmailAddress"
+            android:gravity="center"
             android:hint="Escriba su correo electrónico"
+            android:fontFamily="sans-serif-condensed"
             android:maxLines="1"/>
 
         <EditText android:id="@+id/et_password"
             android:layout_below="@id/et_correo"
             android:padding="10dp"
+            android:gravity="center"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textPassword"
             android:hint="Escriba su contraseña"
-            android:fontFamily="sans-serif"
+            android:fontFamily="sans-serif-condensed"
             android:maxLines="1"/>
 
     <ImageView android:id="@+id/iv_1"
